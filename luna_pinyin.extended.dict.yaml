@@ -1,0 +1,34 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Luna Pinyin Extended Dictionary（明月拼音扩充词库）
+#
+# https://github.com/ASC8384/myRime
+# mailto:ASC_8384@foxmail.com
+#
+# 部署位置：
+# ~/.config/ibus/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+#
+# 重新部署即可
+#
+---
+name: luna_pinyin.extended
+version: "2018.02.09"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables: # 不需要的加'#'即可
+  - luna_pinyin # 从 luna_pinyin.dict.yaml 导入包含单字的码表
+  - luna_pinyin.wenhua #成语、诗词、文言
+  - luna_pinyin.cn_en # 中英混输
+  - luna_pinyin.hanyu # 汉语扩充
+  - luna_pinyin.computer # 计算机
+  - luna_pinyin.zhejiang # 浙江信息
+  - luna_pinyin.yanwenzi # 颜文字
+  #- luna_pinyin.game # 游戏，DND，MC，RA，魔兽争霸
+  - luna_pinyin.changyong # 常用聊天用语
+  #- luna_pinyin.zhuanye # 专业术语，地理，法律，军事，天文，物理，数学
+  #- luna_pinyin.extra_hanzi # 额外的字
+  - luna_pinyin.english #英语
+...

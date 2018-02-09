@@ -1,0 +1,76 @@
+# luna_pinyin.custom.yaml
+#
+# 将朙月拼音的词库修改为朙月拼音扩充词库
+#
+# https://github.com/ASC8384/myRime
+# mailto:ASC_8384@foxmail.com
+# 有参考
+#
+# 部署位置：
+# ~/.config/ibus/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+#
+# 重新部署即可
+#
+
+patch:
+  #表情'/'输入
+  punctuator/import_preset: mysymbols #表情
+  recognizer/patterns/punct: "^/([a-z]+|[0-9])$" #输入‘/’
+  # end
+  # 自定义符号
+  #punctuator/full_shape:
+    #"/" : "／", "÷", "、"
+  #punctuator/half_shape:
+    #"/" : "/", "／", "÷", "、"
+  # end
+  # 活用标点创建自定义词组
+  #recognizer/patterns/reverse_lookup: #作用是关闭 ` 键的反查功能
+  #punctuator/half_shape: 
+  #  '`': [ '`', 'ASC_8384', 'ASC_8384@foxmail.com']
+  # end
+  # 扩充词库
+  translator/dictionary: luna_pinyin.extended
+  # 改寫拼寫運算，使得含西文的詞彙（位於 luna_pinyin.cn_en.dict.yaml 中）不影響簡拼功能
+  "speller/algebra/@before 0": xform/^([b-df-np-z])$/$1_/
+  # end
+  # 加載 easy_en 依賴，英文聯想輸入
+  "schema/dependencies/@next": easy_en
+  # 載入翻譯英文的碼表翻譯器，取名爲 english
+  "engine/translators/@next": table_translator@english
+  # english 翻譯器的設定項
+  english:
+    dictionary: easy_en
+    spelling_hints: 9
+    enable_completion: true
+    enable_sentence: false
+    initial_quality: -1
+  # end
+  #模糊音
+  #'speller/algebra':
+    #- derive/^([zcs])h/$1/             # zh, ch, sh => z, c, s
+    #- derive/^([zcs])([^h])/$1h$2/     # z, c, s => zh, ch, sh
+    #- derive/^n/l/                     # n => l
+    #- derive/^l/n/                     # l => n
+    #- derive/^r/l/                     # r => l
+    #- derive/^ren/yin/                 # ren => yin, reng => ying
+    #- derive/^shen/sehn/
+    #- derive/^r/y/                     # r => y
+    #- derive/^hu$/fu/                  # hu => fu
+    #- derive/^hong$/feng/              # hong => feng
+    #- derive/^hu([in])$/fe$1/          # hui => fei, hun => fen
+    #- derive/^hu([ao])/f$1/            # hua => fa, ...
+    #- derive/^fu$/hu/                  # fu => hu
+    #- derive/^feng$/hong/              # feng => hong
+    #- derive/^fe([in])$/hu$1/          # fei => hui, fen => hun
+    #- derive/^f([ao])/hu$1/            # fa => hua, ...
+    #- derive/^([bpmf])eng$/$1ong/      # meng = mong, ...
+    #- derive/([ei])n$/$1ng/            # en => eng, in => ing
+    #- derive/([ei])ng$/$1n/            # eng => en, ing => in
+    #- derive/au$/ua/                    # hau => hua, ...
+    #- derive/([aeiou])ng$/$1gn/        # dagn => dang
+    #- derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho => zhong|zhou
+    #- derive/ong$/on/                  # zhonguo => zhong guo
+    #- derive/ao$/oa/                   # hoa => hao
+    #- derive/([iu])a(o|ng?)$/a$1$2/    # tain => tian

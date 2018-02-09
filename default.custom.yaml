@@ -1,0 +1,21 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.9.30
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Thu Feb 08 19:45:16 2018"
+  rime_version: 1.1.2
+patch:
+  "ascii_composer/good_old_caps_lock": true
+  "ascii_composer/switch_key":
+    Shift_L: commit_text
+    Shift_R: inline_ascii
+  "menu/page_size": 9 #候选词
+  schema_list:
+    - {schema: luna_pinyin}
+    - {schema: luna_pinyin_fluency}
+    - {schema: terra_pinyin}
+    - {schema: emoji}
+  "switcher/hotkeys":  # 这个列表里每项定义一个快捷键，使哪个都中
+    #- "Control+s"     # 添加 Ctrl+s
+    - "Control+grave"  # 你看写法并不是 Ctrl+` 而是与 IBus 一致的表示法
+    - F4

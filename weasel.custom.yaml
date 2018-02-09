@@ -1,0 +1,16 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.9.30
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu Feb 08 12:28:57 2018"
+  rime_version: 1.1.2
+patch:
+  "style/color_scheme": lost_temple
+  "style/display_tray_icon": true
+  "style/horizontal": false #横竖排
+  #"style/font_face": "Microsoft YaHei Mono" #微软雅黑
+  "style/font_point": 16 #字号
+  app_options/sublime_text.exe:
+    ascii_mode: true
+  app_options/firefox.exe:
+    ascii_mode: true
