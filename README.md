@@ -36,6 +36,8 @@
 
 [ACsediment](https://github.com/ACsediment/RimeNewbie)
 
+[Aixtuz](https://github.com/Aixtuz/Rime-Config)
+
 搜狗细胞词库工作人员及贡献者
 
 百度输入法词库工作人员及贡献者
