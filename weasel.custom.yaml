@@ -10,7 +10,6 @@ patch:
   "style/horizontal": false #横竖排
   #"style/font_face": "Microsoft YaHei Mono" #微软雅黑
   "style/font_point": 16 #字号
-  app_options/sublime_text.exe:
-    ascii_mode: true
-  app_options/firefox.exe:
-    ascii_mode: true
+  app_options/tim.exe: {}
+  #app_options/x.exe: # 程序名字全用小写字母
+  #  ascii_mode: true
