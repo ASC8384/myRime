@@ -13,22 +13,32 @@
 #
 # 重新部署即可
 #
+
 ---
 name: luna_pinyin.extended
-version: "2018.02.09"
+version: "2021.02"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables: # 不需要的加'#'即可
-  - luna_pinyin # 从 luna_pinyin.dict.yaml 导入包含单字的码表
-  - luna_pinyin.wenhua #成语、诗词、文言
-  - luna_pinyin.cn_en # 中英混输
-  - luna_pinyin.hanyu # 汉语扩充
+  - clover.base # 单字，四叶草
+  - clover.phrase # 词组
+  # - luna_pinyin # 从 luna_pinyin.dict.yaml 导入包含单字的码表
+  - zhwiki # 中文 wiki（较大）
+  - myemoji # emoji 颜文字
+  - luna_pinyin.wenhua # 成语、诗词、文言
+  - luna_pinyin.sogoupopular # 网络流行新词，搜狗
+  - THUOCL_IT # 本词表包含了大量IT类词汇，THU Open Chinese Lexicon
+  - THUOCL_caijing # 本词表包含了大量财经类词汇
+  - THUOCL_chengyu # 本词表包含了大量成语词汇
+  # - luna_pinyin.chaizi # 简体拆字
+  # - luna_pinyin.cn_en # 中英混输
+  # - luna_pinyin.hanyu # 汉语扩充
   - luna_pinyin.computer # 计算机
-  - luna_pinyin.zhejiang # 浙江信息
-  - luna_pinyin.yanwenzi # 颜文字
+  # - luna_pinyin.zhejiang # 浙江信息
+  # - luna_pinyin.yanwenzi # 颜文字
   #- luna_pinyin.game # 游戏，DND，MC，RA，魔兽争霸
   - luna_pinyin.changyong # 常用聊天用语
   #- luna_pinyin.zhuanye # 专业术语，地理，法律，军事，天文，物理，数学
   #- luna_pinyin.extra_hanzi # 额外的字
-  - luna_pinyin.english #英语
+  # - luna_pinyin.english #英语
 ...
