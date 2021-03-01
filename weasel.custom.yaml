@@ -1,15 +1,33 @@
 customization:
   distribution_code_name: Weasel
-  distribution_version: 0.9.30
+  distribution_version: 0.14.3
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Thu Feb 08 12:28:57 2018"
-  rime_version: 1.1.2
+  modified_time: "Wed Feb 24 13:49:19 2021"
+  rime_version: 1.7.3
+
 patch:
-  "style/color_scheme": lost_temple
-  "style/display_tray_icon": true
-  "style/horizontal": false #横竖排
-  #"style/font_face": "Microsoft YaHei Mono" #微软雅黑
-  "style/font_point": 16 #字号
-  app_options/tim.exe: {}
-  #app_options/x.exe: # 程序名字全用小写字母
-  #  ascii_mode: true
+  style/+:
+    color_scheme: gruvbox
+    font_face: "思源黑体"
+    # font_face: HanaMinB
+    font_point: 16
+    horizontal: false
+    inline_preedit: false
+    # display_tray_icon: true
+    layout:
+      round_corner: 5
+  preset_color_schemes/+:
+    gruvbox:
+      name: 扶风 / Gruvbox
+      author: ASC_8384 <ASC_8384@foxmail.com>
+      back_color: 0x282828
+      border_color: 0x21201D
+      text_color: 0x8499A8
+      hilited_text_color: 0x282828
+      hilited_back_color: 0x8499A8
+      hilited_candidate_text_color: 0xC7F1FB
+      hilited_candidate_back_color: 0x454950
+      candidate_text_color: 0xB2DBEB
+      comment_text_color: 0x748392
+  app_options/Code.exe:
+    ascii_mode: true
