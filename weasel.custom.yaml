@@ -31,3 +31,15 @@ patch:
       comment_text_color: 0x748392
   app_options/Code.exe:
     ascii_mode: true
+  app_options/gvim.exe:
+    ascii_mode: true
+  app_options/cmder.exe:
+    ascii_mode: true
+  app_options/conemu64.exe: # cmder 真身
+    ascii_mode: true
+  app_options/cmd.exe:
+    ascii_mode: true
+  app_options/bash.exe:
+    ascii_mode: true
+  app_options/powershell.exe:
+    ascii_mode: true
