@@ -12,7 +12,7 @@
 
 patch:
 
-  switches/+:
+  switches:
     - name: ascii_mode
       reset: 1
       states: [中文, 洋文]
@@ -35,7 +35,8 @@ patch:
       states: [ 增廣, 常用 ] # []
 
   engine/+:
-    # translators/+:
+    translators/+:
+      - table_translator@custom_phrase # 自定义词库
     #   - echo_translator # 沒有其他候選字時，回顯輸入碼〔輸入碼可以Shift+Enter上屛〕
     filters:
       - charset_filter@gb2312
@@ -63,6 +64,14 @@ patch:
     - { when: has_menu, accept: apostrophe, send: 3 }
     - { when: paging, accept: bracketleft, send: Page_Up }
     - { when: has_menu, accept: bracketright, send: Page_Down }
+
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
 
   simplifier:
     option_name: zh_simp
