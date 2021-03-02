@@ -1,0 +1,83 @@
+# https://github.com/ASC8384/myRime
+# mailto:ASC_8384@foxmail.com
+# 有参考
+#
+# 部署位置：
+# ~/.config/ibus/rime  (Linux)
+# ~/Library/Rime  (Mac OS)
+# %APPDATA%\Rime  (Windows)
+#
+# 重新部署即可
+#
+
+patch:
+
+  switches/+:
+    - name: ascii_mode
+      reset: 1
+      states: [中文, 洋文]
+    - name: full_shape
+      reset: 0
+      states: [半角, 全角]
+    - name: zh_simp
+      reset: 1
+      states: [漢字, 汉字]
+    - name: ascii_punct
+      states: [ 。，, ．， ]
+    - name: emoji_suggestion
+      reset: 0
+      states: [ "🈚️️\uFE0E", "🈶️️\uFE0F" ]
+    - name: symbol_support
+      reset: 1
+      states: [ "无符", "→符" ]
+    - name: gb2312 #生僻字开关
+      reset: 1
+      states: [ 增廣, 常用 ] # []
+
+  engine/+:
+    # translators/+:
+    #   - echo_translator # 沒有其他候選字時，回顯輸入碼〔輸入碼可以Shift+Enter上屛〕
+    filters:
+      - charset_filter@gb2312
+      - simplifier@emoji_suggestion
+      - simplifier@symbol_support
+      - simplifier # 简体
+      - uniquifier # 去重
+
+  # "recognizer/patterns/punct": "^/([a-z]+|[0-9])$" # / 键
+  "recognizer/patterns/punct": "^\\\\([A-Z|a-z]*|[0-9]|10)$" # \ 键
+  # "recognizer/patterns/punct": "^i([A-Z|a-z]*|[0-9]|10)$" # i 键
+
+  # 主翻译器
+  translator/dictionary: luna_pinyin.extended # 載入朙月拼音擴充詞庫
+  translator/initial_quality: 1 # 主翻译器的优先级设为1
+  translator/enable_completion: true # 开启逐鍵提示
+  translator/preedit_format: {} # 输入双拼码的时候不转化为全拼码
+
+  punctuator:
+    import_preset: mysymbols # mysymbols
+
+  # 分号上屏二候选词；引号上屏三候选词
+  "key_binder/bindings":
+    - { when: has_menu, accept: semicolon, send: 2 }
+    - { when: has_menu, accept: apostrophe, send: 3 }
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
+
+  simplifier:
+    option_name: zh_simp
+
+  # https://github.com/rime/rime-emoji/blob/master/emoji_suggestion.yaml
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: all
+
+  # https://github.com/fkxxyz/rime-symbols
+  symbol_support:
+    opencc_config: symbol.json
+    option_name: symbol_support
+    tips: all
+
+  reverse_lookup/+: # 笔画输入法反查
+    tips: 〔筆畫↔hspnz/一丨丿丶乙〕
