@@ -31,7 +31,7 @@ patch:
       reset: 1
       states: [ "无符", "→符" ]
     - name: gb2312 #生僻字开关
-      reset: 1
+      reset: 0
       states: [ 增廣, 常用 ] # []
 
   engine/+:
@@ -57,6 +57,37 @@ patch:
 
   punctuator:
     import_preset: mysymbols # mysymbols
+    half_shape:
+      "`": "·"
+      "~": "～"
+      "!": "！"
+      "@": "@"
+      "#": "#"
+      "$": "￥"
+      "%": "%"
+      "^": "……"
+      "&": "&"
+      "*": "×"
+      "(": "（"
+      ")": "）"
+      "_": "——"
+      "+": "+"
+      "-": "-"
+      "=": "="
+      "[": "【"
+      "]": "】"
+      "{": "｛"
+      "}": "｝"
+      "|": "｜"
+      "\\": "、"
+      "/": "、"
+      ";": "；"
+      "'": "’"
+      ",": "，"
+      ".": "。"
+      "<": "《"
+      ">": "》"
+      "?": "？"
 
   # 分号上屏二候选词；引号上屏三候选词
   "key_binder/bindings":
@@ -75,6 +106,7 @@ patch:
 
   simplifier:
     option_name: zh_simp
+    # tags: [ abc ] # abc 對應abc_segmentor
 
   # https://github.com/rime/rime-emoji/blob/master/emoji_suggestion.yaml
   emoji_suggestion:
