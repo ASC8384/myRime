@@ -45,6 +45,51 @@ patch:
       - simplifier # 简体
       - uniquifier # 去重
 
+  speller:
+    alphabet: zyxwvutsrqponmlkjihgfedcba
+    delimiter: " '"
+    algebra:
+      - erase/^xx$/
+      - derive/^([jqxy])u$/$1v/
+      - derive/^([aoe])([ioun])$/$1$1$2/
+      # 模糊音，简拼会破坏双拼的美感
+      # - abbrev/^([az]).+$/$1/ #简拼（首字母）
+      # - abbrev/^([zcs]h).+$/$1/ #简拼（zh, ch, sh）
+      - derive/^([zcs])h/$1/ # zh, ch, sh => z, c, s
+      - derive/^([zcs])([^h])/$1h$2/ # z, c, s => zh, ch, sh
+      - derive/([aei])n$/$1ng/ # en => eng, in => ing
+      - derive/([aei])ng$/$1n/ # eng => en, ing => in
+      # - derive/([iu])an$/$lang/ # ian => iang, uan => uang
+      # - derive/([iu])ang$/$lan/ # iang => ian, uang => uan
+      - xform/^([aoe])(ng)?$/$1$1$2/
+      - xform/iu$/Q/
+      - xform/(.)ei$/$1W/
+      - xform/uan$/R/
+      - xform/[uv]e$/T/
+      - xform/un$/Y/
+      - xform/^sh/U/
+      - xform/^ch/I/
+      - xform/^zh/V/
+      - xform/uo$/O/
+      - xform/ie$/P/
+      - xform/i?ong$/S/
+      - xform/ing$|uai$/K/
+      - xform/(.)ai$/$1D/
+      - xform/(.)en$/$1F/
+      - xform/(.)eng$/$1G/
+      - xform/[iu]ang$/L/
+      - xform/(.)ang$/$1H/
+      - xform/ian$/M/
+      - xform/(.)an$/$1J/
+      - xform/(.)ou$/$1Z/
+      - xform/[iu]a$/X/
+      - xform/iao$/N/
+      - xform/(.)ao$/$1C/
+      - xform/ui$/V/
+      - xform/in$/B/
+      - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
+      #- abbrev/^(.).+$/$1/
+
   # "recognizer/patterns/punct": "^/([a-z]+|[0-9])$" # / 键
   "recognizer/patterns/punct": "^\\\\([A-Z|a-z]*|[0-9]|10)$" # \ 键
   # "recognizer/patterns/punct": "^i([A-Z|a-z]*|[0-9]|10)$" # i 键
