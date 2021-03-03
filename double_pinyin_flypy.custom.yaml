@@ -173,3 +173,12 @@ patch:
 
   reverse_lookup/+: # 笔画输入法反查
     tips: 〔筆畫↔hspnz/一丨丿丶乙〕
+
+  # 加載 easy_en 依賴
+  "schema/dependencies/@next": easy_en
+  "engine/translators/@next": table_translator@english  # 載入翻譯英文的碼表翻譯器，取名爲 english
+  english:  # english 翻譯器的設定項
+    dictionary: easy_en
+    enable_completion: false     # 是否启用英文输入联想补全
+    enable_sentence: false
+    initial_quality: -3
