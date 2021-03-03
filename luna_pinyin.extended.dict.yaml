@@ -22,7 +22,6 @@ use_preset_vocabulary: true
 import_tables: # 不需要的加'#'即可
   - clover.base # 单字，四叶草
   - clover.phrase # 词组
-  - luna_pinyin.top # 手动固顶词
   # - luna_pinyin # 从 luna_pinyin.dict.yaml 导入包含单字的码表
   - zhwiki # 中文 wiki（较大）
   - myemoji # emoji 颜文字
