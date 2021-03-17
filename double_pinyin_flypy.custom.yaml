@@ -109,7 +109,7 @@ patch:
   punctuator:
     import_preset: mysymbols # mysymbols
     half_shape:
-      "`": "·"
+      "`": ["`", "·"]
       "~": "～"
       "!": "！"
       "@": "@"
