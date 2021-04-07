@@ -37,9 +37,10 @@ import_tables: # 不需要的加'#'即可
   - luna_pinyin.computer # 计算机
   # - luna_pinyin.zhejiang # 浙江信息
   # - luna_pinyin.yanwenzi # 颜文字
-  #- luna_pinyin.game # 游戏，DND，MC，RA，魔兽争霸
+  # - luna_pinyin.game # 游戏，DND，MC，RA，魔兽争霸
   - luna_pinyin.changyong # 常用聊天用语
   - luna_pinyin.zhuanye # 专业术语，地理，法律，军事，天文，物理，数学
-  #- luna_pinyin.extra_hanzi # 额外的字
-  # - luna_pinyin.english #英语
+  # - luna_pinyin.extra_hanzi # 额外的字
+  # - luna_pinyin.english # 英语
+  - luna_pinyin.sgmain # @scomper 做的搜狗词汇汇总
 ...
