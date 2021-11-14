@@ -1,0 +1,325 @@
+# Rime table
+# coding: utf-8
+#@/db_name  custom_phrase.txt
+#@/db_type	tabledb
+#
+# 用於【朙月拼音】系列輸入方案
+# 【小狼毫】0.9.21 以上
+#
+# 請將該文件以UTF-8編碼保存爲
+# Rime用戶文件夾/custom_phrase.txt
+#
+# 碼表各字段以製表符（Tab）分隔
+# 順序爲：文字、編碼、權重（決定重碼的次序、可選）
+#
+# 雖然文本碼表編輯較爲方便，但不適合導入大量條目
+#
+# no comment
+
+中州韻輸入法引擎	rime	3
+Rime Input Method Engine	rime	2
+http://code.google.com/p/rimeime/	rime	1
+星際我爭霸	starcraft
+
+唉哟我勒个去	ddd
+Android	and
+Windows	win
+又双叒叕	yyy
+NeoVim neo
+PDF	pdf	100
+B站	bv
+bilibili	bv
+
+V2EX	ve	2
+v2ex.com	ve	1
+
+Rime	rime	4
+鼠须管	rime	3
+https://rime.im/	rime	2
+Squirrel	rime	1
+
+>	dy	2
+≥	dy	1
+<	xy	2
+≤	xy	1
+
+App Store	as	2
+Apple Store	as	1
+AC86U	ac	2
+AppleCare+	ac	1
+Apple ID	aid
+Apple Music	am	2
+AiMesh	am	1
+AirPods	ap	4
+Apple Pay	ap	3
+Alipay	ap	2
+
+Apple TV	atv
+Apple Watch	aw
+Android	az
+App Cleaner & Uninstaller	acu
+
+Chrome	ch	2
+Clubhouse	ch
+ClashX	cla
+Chrome  ch  100
+CleanMyMac X	cmm	1
+Command	cm	1
+Control	ct	2
+CarPlay	cp	1
+CleanShot X	cs
+
+Download	dl	1
+Downie	dow
+Dear	dear
+
+
+Enpass	enp
+Emoji	em
+Mimestream	mim
+
+Final Cut Pro	fcp
+
+gfwlist	gfw
+
+GitHub Desktop	gh	1
+GitHub	gh	2
+Gmail	gm
+Google	gg
+Google Pay	gp
+Google Play	gp	2
+Google Voice	gv
+Gboard	gb
+
+Handoff	ho
+Hi	hi
+
+HyperSwitch	hs
+
+iCloud	ic
+
+Illustrator	ill
+iStat Menus	ism
+iWork	iw	4
+iTunes	itunes
+iMac	imac	2
+iMac Pro	imac	1
+
+Keynote	kn
+koolproxy	kpr
+koolshare	ks
+Evutec	kfl
+
+Lightning to USB-C	ltc
+Lightning to USB	ltu
+LINE	line
+
+Mac	mac	2
+Mac mini	mac	1
+
+macOS	macos	2
+macOS BigSur	macos	1
+Markdown	md
+Microsoft	mic	2
+Microsoft Office	mic	1
+Netflix	nf
+MacBook Pro	mbp
+MacBook Air	mba
+Messenger	ms
+㎡	pfm
+
+🐂️🍺️	nb	2
+Numbers	nb	1
+
+1Password	one	2
+OneDrive	one	1
+openwrt	ow
+Option	ot
+Outlook	ol	2
+outlook.com	ol	1
+
+Parallels Desktop	pd
+Paragon NTFS	pn
+Photoshop	ps
+Paypal	pp
+Pro	pro
+
+QQ	qq
+Quantumult	quan
+
+Pages	pg
+
+readme.md	rm
+
+ScreenBar Plus	sbp	1
+Shadowrocket	sds	3
+Shadowsocks	sds	2
+ShadowsocksX-NG-R8	sds	1
+Safari	sf	2
+Shift	sf	1
+SHIELD TV	stv
+SSD	ssd	2
+Spotify	sp	1
+Spark	sp	2
+Sublime Text	sbt
+
+Telegram	tg
+Twitter	tt
+Type-C	tc
+Typora	ty
+TeamViewer  tv
+
+USB-C	uc
+Up主	upvu
+U盘	upj
+
+WH-1000XM2	sn
+WhatsApp	wa
+WeChat	wc	2
+Windows	win
+
+YouTube	yt
+YouTube Premium	yp
+
+
+Amazon Cloud Drive	acd
+AdGuard	adg
+AdGuardHome	adh
+AdGuardHome	adg
+Adobe Illustrator	adobe
+Adobe Photoshop	adobe
+AirPort Express	airport
+AirPort Extreme	airport
+Apple Music	imusic
+Apple News	inews
+Apple Pay	ipay
+Apple Pencil	ipencil
+Apple Remote	iremote
+Apple Store	istore
+Apple TV	atv
+Apple Watch	iwatch
+Arial Black	arial
+Arial Narrow	arial
+Arial Rounded	arial
+Arial Unicode	arial
+BandwagonHost	bwg
+BandwagonHost	bwh
+BetterTouchTool	btt
+Bitwarden	bw
+BoldItalic	bold
+C++	cpp
+Clash for Android	cfa
+Clash for Windows	cfw
+Clash X	clashx
+Clash X Pro	clashxp
+Final Cut Pro	fcp
+Firefox	ff
+Google Chrome	gchrome
+Google Docs	gdocs
+Google Drive	gdrive
+Google Keep	gkeep
+Google Maps	gmaps
+Google Music	gmusic
+Google Play	gplay
+Google Slides	gslides
+HBO Max	hbo
+iA Writer	ia
+iBooks Author	ibooks
+iCloud Drive	icloud
+iMac Pro	imac
+iPad Air	ipad
+iPad mini	ipad
+iPad Pro	ipad
+IPv4	ipv
+IPv6	ipv
+iStat Menus	istat
+iTunes Connect	itunes
+iTunes Match	itunes
+Kindle Format	kindle
+Kindle Oasis	kindle
+Kindle Paperwhite	kindle
+Kindle Unlimited	kindle
+Kindle Voyage	kindle
+LibreOffice	libre
+Mac App Store	mas
+Mac mini	mac
+Mac Pro	mac
+MacBook	macbook
+MacBook Air	macbook
+MacBook Pro	macbook
+macOS Mojave	macos
+macOS High Sierra	macos
+Magic Keyboard	magic
+Magic Mouse	magic
+Magic Mouse 2	magic
+Magic Trackpad	magic
+Magic Trackpad 2	magic
+Micro SD	micro
+Micro-SIM	micro
+Microsoft	microsoft
+Microsoft Office	microsoft
+Microsoft Word	microsoft
+Netflix	nf	1000
+Notepad++	notepad
+Objective-C	objc
+Objective-C	objective
+Oculus Rift	oculus
+Oculus VR	oculus
+OfficeSuite	office
+OmniFocus	omni
+OmniGraffle	omni
+OmniOutliner	omni
+OmniPlan	omni
+OneDrive	one
+OneNote	one
+OnePlus	one
+OnePlus	op
+OS X	osx
+OS X Server	osx
+OS X Server	osx
+Outlook Express	outlook
+Photo Booth	photo
+PhotoDesk	photo
+Photoshop	photoshop
+PhpStorm	php
+Pokémon GO	pokemon
+Pornhub	ph	1000
+Proxy Group	proxy
+PDF Expert	pdf
+Quantumult	quanx	1
+Quantumult X	quanx	2
+QuickTime Player	quick
+Sans Serif	sans
+Shadowsocks	ss	1000
+ShadowsocksR	ssr
+Sublime Text	sublime
+Surge iOS	surge
+Surge Mac	surge
+TCP/IP	tcpip
+Telegram	tg	100
+Thunderbird	thunder
+Thunderbolt	thunder
+Thunderbolt Bridge	thunderbolt
+Thunderbolt Ethernet	thunderbolt
+TG	tg	1000
+TP-LINK	tp
+URL Scheme	url
+USB-A	usb	2
+USB-C	usb	1
+UTF-8	utf	3
+UTF-16	utf	2
+UTF-32	utf	1
+VirtualBox	vbox
+Virtual PC	vpc
+Visual Studio Code	vscode
+VSCode  vscode
+WireGuard	wg
+Xbox One	xbox
+YouTube 	ytb
+YouTube Music	ytbm
+YouTube Premium	ytbp
+	apple
+ MUSIC	imusic
+ PAY	ipay
+ tv 4K	atv
+ WATCH	iwatch

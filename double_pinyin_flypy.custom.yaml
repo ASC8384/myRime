@@ -37,6 +37,7 @@ patch:
   engine/+:
     translators/+:
       - table_translator@custom_phrase # 自定义词库
+      - table_translator@custom_personal # 自定义个人词库
       - lua_translator@date_translator # 自定义 lua 脚本
       - lua_translator@time_translator
     #   - echo_translator # 沒有其他候選字時，回顯輸入碼〔輸入碼可以Shift+Enter上屛〕
@@ -149,7 +150,15 @@ patch:
 
   custom_phrase:
     dictionary: ""
-    user_dict: custom_phrase
+    user_dict: dicts/custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+
+  custom_personal:
+    dictionary: ""
+    user_dict: dicts/custom_personal
     db_class: stabledb
     enable_completion: false
     enable_sentence: false
