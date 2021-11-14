@@ -28,7 +28,11 @@
 
 ## 致谢
 
-感谢的大佬太多了，有很多没敲上😂，诸如四叶草🍀大佬、维基词库提供者大佬，等等。
+感谢的大佬太多了，有很多没敲上😂，还请谅解。
+
+[🍀四叶草拼音输入方案](https://github.com/fkxxyz/rime-cloverpinyin)
+
+[fcitx5-pinyin-zhwiki](https://github.com/ipcjs/fcitx5-pinyin-zhwiki)
 
 [rime-aca](https://github.com/rime-aca/dictionaries)
 
