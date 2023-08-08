@@ -142,6 +142,7 @@ patch:
       "?": "？"
 
   # 分号上屏二候选词；引号上屏三候选词
+  # minus/减号，equal/等号，comma/逗号，period/句号，exclam/感叹号，numbersign/井号，percent/百分号，semicolon/分号，apostrophe/单引号，brcketleft/左中括号，bracketright/右中括号
   "key_binder/bindings":
     - { when: has_menu, accept: semicolon, send: 2 }
     - { when: has_menu, accept: apostrophe, send: 3 }

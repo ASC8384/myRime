@@ -18,14 +18,21 @@
 name: luna_pinyin.extended
 version: "2021.02"
 sort: by_weight
-use_preset_vocabulary: true
+use_preset_vocabulary: false
+# 单字码表由下方外部码表导入，权重从上到下
+# vocabulary: dicts/clover/clover.base
 import_tables: # 不需要的加'#'即可
   # clover
+  - dicts/ice/8105 # 雾凇拼音，字表
+  - dicts/ice/41448 # 大字表
   - dicts/clover/clover.base # 单字，四叶草
+  - dicts/ice/base # 基础词库
+  - dicts/ice/ext # 扩展词库
   - dicts/clover/clover.phrase # 词组
   # other
   # - dicts/luna_pinyin # 从 luna_pinyin.dict.yaml 导入包含单字的码表
-  - dicts/other/zhwiki # 中文 wiki（较大）
+  - dicts/other/zhwiki # 中文 wiki（较大，卡顿建议注释）
+  # - dicts/other/zhwiki.ipcjs # 中文 wiki @ipcjs fork 版（较大，卡顿建议注释），转换成繁体，进行多音字注音，只保留3字及以上的词组，去除重复词条
   - dicts/other/myemoji # emoji 颜文字
   # thuocl
   - dicts/thuocl/THUOCL_IT # 本词表包含了大量IT类词汇，THU Open Chinese Lexicon
