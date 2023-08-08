@@ -1,0 +1,51 @@
+style:
+  color_scheme: gruvbox
+  # https://github.com/rime/weasel/wiki/%E5%AD%97%E9%AB%94%E8%A8%AD%E5%AE%9A#%E4%BE%8B%E5%AD%90%E8%A7%A3%E6%9E%90
+  font_face: "Segoe UI Emoji:80, 霞鹜文楷, 思源黑体, Microsoft YaHei"
+  font_point: 17
+  inline_preedit: false
+  # display_tray_icon: true
+  layout:
+    # 布局设定
+    round_corner: 8 # 高亮区域圆角
+    corner_radius: 8 # 候选框圆角
+  fullscreen: false # 全屏排列：true；false
+  horizontal: false # 横向排列：true；false
+  vertical_text: false # 竖排：true；false
+  vertical_text_left_to_right: false # 竖排下从左到右：true；false
+  vertical_text_with_wrap: false # 竖排下，自动换行：true；false
+  vertical_auto_reverse: false # 竖排下，输入窗口在上方时倒序排列：true；false
+
+preset_color_schemes:
+# 小狼毫配色在线设计：
+# [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
+  gruvbox:
+    name: 扶风 / Gruvbox
+    author: ASC_8384 <ASC_8384@foxmail.com>
+    back_color: 0x282828
+    border_color: 0x21201D
+    text_color: 0x8499A8
+    hilited_text_color: 0x282828
+    hilited_back_color: 0x8499A8
+    hilited_candidate_text_color: 0xC7F1FB
+    hilited_candidate_back_color: 0x454950
+    candidate_text_color: 0xB2DBEB
+    comment_text_color: 0x748392
+
+app_options:
+  Code.exe:
+    ascii_mode: true # 默认使用英文输入
+  gvim.exe:
+    ascii_mode: true
+  cmder.exe:
+    ascii_mode: true
+  conemu64.exe: # cmder 真身
+    ascii_mode: true
+  cmd.exe:
+    ascii_mode: true
+  bash.exe:
+    ascii_mode: true
+  powershell.exe:
+    ascii_mode: true
+  WindowsTerminal.exe:
+    ascii_mode: true
