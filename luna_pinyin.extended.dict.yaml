@@ -29,7 +29,7 @@ import_tables: # 不需要的加'#'即可
   - dicts/ice/base # 基础词库
   - dicts/ice/ext # 扩展词库
   - dicts/ice/others # 容错词库
-  - dicts/ice/tencent # 腾讯词向量库
+  # - dicts/ice/tencent # 腾讯词向量库
   - dicts/clover/clover.phrase # 词组
   # other
   # - dicts/luna_pinyin # 从 luna_pinyin.dict.yaml 导入包含单字的码表
