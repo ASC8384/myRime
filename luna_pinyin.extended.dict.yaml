@@ -25,9 +25,11 @@ import_tables: # 不需要的加'#'即可
   # clover
   - dicts/ice/8105 # 雾凇拼音，字表
   - dicts/ice/41448 # 大字表
-  - dicts/clover/clover.base # 单字，四叶草
+  # - dicts/clover/clover.base # 单字，四叶草
   - dicts/ice/base # 基础词库
   - dicts/ice/ext # 扩展词库
+  - dicts/ice/others # 容错词库
+  - dicts/ice/tencent # 腾讯词向量库
   - dicts/clover/clover.phrase # 词组
   # other
   # - dicts/luna_pinyin # 从 luna_pinyin.dict.yaml 导入包含单字的码表
