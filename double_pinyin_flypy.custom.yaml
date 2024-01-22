@@ -43,6 +43,7 @@ patch:
     #   - echo_translator # 沒有其他候選字時，回顯輸入碼〔輸入碼可以Shift+Enter上屛〕
     filters:
       - charset_filter@gb2312
+      # - lua_filter@charset_comment_filter # 为候选项加上其所属字符集的注释
       - simplifier@emoji_suggestion
       - simplifier@symbol_support
       - simplifier # 简体
