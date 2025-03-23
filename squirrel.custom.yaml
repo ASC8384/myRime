@@ -1,0 +1,18 @@
+patch:
+  "app_options/+":
+    __include: "weasel.style:/app_options"
+  "preset_color_schemes/+":
+    __include: "weasel.style:/preset_color_schemes"
+  "style/+":
+    __include: "weasel.style:/style"
+  "style/color_scheme": gruvbox
+  style/color_scheme_dark: gruvbox
+  "style/font_point": 20
+  # "style/border_height": 0 # 可正可負，邊緣高度，爲負時可收窄圓角造成的避讓留白
+  # "style/border_width": 0
+  style/round_corner: 8 # 高亮区域圆角　
+  style/corner_radius: 8 # 候选框圆角: false
+  style/hilited_corner_radius: 7
+  style/spacing: 5
+  style/inline_preedit: false
+  style/memorize_size: false
